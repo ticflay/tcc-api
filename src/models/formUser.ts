@@ -4,8 +4,10 @@ import { User } from "./user";
 
 @Table({
     tableName: 'formUser',
+    paranoid: true
 })
 export class FormUser extends Model {
+
     @ForeignKey(() => User)
     @Column({
         type: DataType.INTEGER

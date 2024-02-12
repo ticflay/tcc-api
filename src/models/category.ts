@@ -4,6 +4,7 @@ import { Criteria } from "./criteria";
 
 @Table({
     tableName: 'category',
+    
 })
 export class Category extends Model {
     @Column({
@@ -12,7 +13,7 @@ export class Category extends Model {
     })
     name!: string;
     @Column({
-        type: DataType.STRING,
+        type: DataType.TEXT('long'),
         allowNull: true,
     })
     description?: string;

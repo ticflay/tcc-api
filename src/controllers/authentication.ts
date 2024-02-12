@@ -105,7 +105,7 @@ export const login: RequestHandler = async (req, res, next) => {
 
 export const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
   const authHeader = req.headers.authorization;
-
+  console.log('entra aq no authmiddlaware?')
   if (!authHeader) {
     return res.status(401).json({ error: 'Token não fornecido.' });
   }
@@ -123,9 +123,12 @@ export const authMiddleware = (req: Request, res: Response, next: NextFunction) 
   }
 
   jwt.verify(token, secret_key, (err, decoded: any) => {
+    console.log('entra aq no verify, entao', err, decoded);
+
     if (err) {
       return res.status(401).json({ error: 'Token inválido.' });
     }
+    console.log('é aqui que da erro?', decoded.id)
 
     req.userId = decoded.id;
 

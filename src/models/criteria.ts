@@ -3,6 +3,7 @@ import { Table, Model, Column, DataType } from "sequelize-typescript";
 
 @Table({
     tableName: 'criteria',
+    
 })
 export class Criteria extends Model {
     @Column({

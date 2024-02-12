@@ -6,6 +6,7 @@ export type AnswerType = 'true' | 'false' | 'NA'
 
 @Table({
     tableName: 'answerForm',
+    paranoid: true
 })
 export class AnswerForm extends Model {
     @Column({
