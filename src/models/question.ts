@@ -17,6 +17,11 @@ export class Question extends Model {
         allowNull: true,
     })
     description?: string;
+    @Column({
+        type: DataType.TEXT('long'),
+        allowNull: false,
+    })
+    identifier!: string;
     @ForeignKey(() => Category)
     @Column({
         type: DataType.INTEGER

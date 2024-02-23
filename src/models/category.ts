@@ -14,9 +14,9 @@ export class Category extends Model {
     name!: string;
     @Column({
         type: DataType.TEXT('long'),
-        allowNull: true,
+        allowNull: false,
     })
-    description?: string;
+    identifier!: string;
     @ForeignKey(() => Criteria)
     @Column({
         type: DataType.INTEGER
