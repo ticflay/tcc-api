@@ -51,7 +51,7 @@ Make sure your MySQL server is running. Then follow these steps:
 
 4. **Set environment variables:**
 
-Create a `.env` file in the root directory of the project and set the necessary environment variables, including the database password and the ChatGPT API key.
+Create a `.env` file in the root directory of the project and set the necessary environment variables.
 
 ```plaintext
 DB_PASSWORD=your-password
@@ -129,7 +129,7 @@ Certifique-se de que o seu servidor MySQL esteja em execução. Em seguida, siga
 
 4. **Configurar variáveis de ambiente:**
 
-Crie um arquivo `.env` no diretório raiz do projeto e configure as variáveis de ambiente necessárias, com a senha do banco de dados e a api key do chat gpt.  
+Crie um arquivo `.env` no diretório raiz do projeto e configure as variáveis de ambiente necessárias.  
 
 ```plaintext
 DB_PASSWORD=sua-senha
